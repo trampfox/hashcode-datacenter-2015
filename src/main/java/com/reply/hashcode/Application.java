@@ -6,6 +6,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.PriorityQueue;
+import java.util.Random;
 import java.util.Set;
 
 import com.reply.hashcode.helpers.FileHelper;
@@ -21,10 +22,13 @@ public class Application {
 
   public static void main(String[] args) {
     FileHelper fileHelper = new FileHelper();
-    String folder = "C:\\Users\\m.omodei\\Documents\\HashCode\\input\\";
-    for(int f = 1; f <= 9; f++) {
-	    String inputFilePath = folder + f +".in"; //args[0];
-	    String outputFilePath = folder + f + ".out";
+    String folder = "C:\\Users\\m.omodei\\Documents\\HashCode\\google\\";//input.test\\";
+    /*for(int f = 1; f <= 9; f++) {
+	    String inputFilePath = folder + f + ".in";
+	    String outputFilePath = folder + f + ".out";*/
+    String inputFilePath = folder + "dc.in";
+    String outputFilePath = folder + "dc.out";
+    
 	    List<String> header = fileHelper.readFileHeader(inputFilePath);
 	    Map<String, Integer> parameters = MatrixHelper.readMatrixParameters(header);
 	    List<String> lines = fileHelper.readFileContentByLine(inputFilePath);
@@ -45,9 +49,6 @@ public class Application {
 	    	sortedPools.add(tmp);
 	    }
 	    Collections.sort(pools);
-	    //for(Pool tmp : pools)
-	    //	//System.out.println("");
-	    //System.out.println("Start");
 	    int serverCount = 0;
 	    for(Server s : sortedServers) {
 	    	serverCount++;
@@ -56,6 +57,7 @@ public class Application {
 	    	boolean inserted = false;
 	    	List<Integer> removed = new ArrayList<Integer>();
 	    	int poolTry = 0, rowTry = 0;
+	    	Random rand = new Random();
 	    	while(!inserted && poolTry < poolsNum) {
 	    		poolTry++;
 		    	Pool p = sortedPools.poll();
@@ -63,13 +65,19 @@ public class Application {
 	    		removed.add(p.getId());
 		    	Set<Integer> tryedRows = new HashSet<Integer>();
 		    	while(!inserted && rowTry < rows) {
-		    		Integer min = Integer.MAX_VALUE, minIdx = -1;
+		    		int min = Integer.MAX_VALUE, minIdx = -1;
 		    		for(int i = 0; i < rows; i++) {
 		    			if(tryedRows.contains(i))
 		    				continue;
 		    			else if(p.getRowCapacities().get(i) < min) {
 			    			min = p.getRowCapacities().get(i);
 			    			minIdx = i;
+			    		}
+		    			else if(p.getRowCapacities().get(i) == min) {
+		    				if(rand.nextInt(rows) == 0) {
+				    			min = p.getRowCapacities().get(i);
+				    			minIdx = i;
+		    				}
 			    		}		
 			    	}
 		    		rowTry++;
@@ -84,7 +92,7 @@ public class Application {
 	    	}
 	    }
 	    fileHelper.writeOutputFile(servers, outputFilePath);
-    }
+    //}
     
   }
 
