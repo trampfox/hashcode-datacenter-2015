@@ -16,7 +16,7 @@ public class MatrixHelper {
     parameters.put("slots", Integer.valueOf(headerValues.get(1)));
     parameters.put("unavailableSlots", Integer.valueOf(headerValues.get(2)));
     parameters.put("pools", Integer.valueOf(headerValues.get(3)));
-    parameters.put("severs", Integer.valueOf(headerValues.get(3)));
+    parameters.put("servers", Integer.valueOf(headerValues.get(3)));
 
     System.out.println(
         String.format("%d rows, %d columns, min %d of each ingredient per slice, max %d cells per slice",
@@ -51,5 +51,7 @@ public class MatrixHelper {
 
     return matrix;
   }
+
+
 
 }
