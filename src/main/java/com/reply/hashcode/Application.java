@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Map;
+import java.util.PriorityQueue;
 
 import com.reply.hashcode.helpers.FileHelper;
 import com.reply.hashcode.helpers.MatrixHelper;
@@ -26,23 +27,29 @@ public class Application {
     List<String> lines = fileHelper.readFileContentByLine(inputFilePath);
     List<UnavailableSlot> unavailableSlots = MatrixHelper.readUnavailableSlots(parameters, lines);
     Map<Integer, Server> servers = MatrixHelper.readServers(parameters, lines);
-    List<Server> sortedServers = Collections.sort(servers);
+    List<Server> sortedServers = new ArrayList<Server>();
+    for(Integer key : servers.keySet())
+    	sortedServers.add(servers.get(key));
+    Collections.sort(sortedServers);
     List<Pool> pools = new ArrayList<Pool>();
-    for(int i = 0; i < poolsNum; i++)
-    	pools.add(new Pool(i));
-    
-    List<Pool> sortedPools = Collections.sort(pools);
+    PriorityQueue<Pool> sortedPools = new PriorityQueue<Pool>();
+    for(int i = 0; i < poolsNum; i++) {
+    	Pool tmp = new Pool(i);
+    	pools.add(tmp);
+    	sortedPools.add(tmp);
+    }
+    Collections.sort(pools);
     datacenterMatrix = MatrixHelper.buildDatacenterMatrix(parameters, unavailableSlots);
-
     rows = parameters.get("rows");
     slots = parameters.get("slots");
     poolsNum = parameters.get("pools");
     serversNum = parameters.get("servers");
-    Integer serverIdx = 0;
     for(Server s : sortedServers) {
     	boolean inserted = false;
     	List<Integer> removed = new ArrayList<Integer>();
-    	while(!inserted) {
+    	int poolTry = 0;
+    	while(!inserted && poolTry < poolsNum) {
+    		poolTry++;
 	    	Pool p = sortedPools.poll();
 	    	removed.add(p.getId());
 	    	Integer min = Integer.MAX_VALUE, minIdx = -1;
@@ -55,7 +62,7 @@ public class Application {
 	    	inserted = insert(s, p, minIdx);
     	}
     	for(Integer idx : removed) {
-    		sortedPools.
+    		sortedPools.add(pools.get(idx));
     	}
     }
     

@@ -6,7 +6,7 @@ import java.util.List;
 /**
  * @author Davide Monfrecola
  */
-public class Pool {
+public class Pool implements Comparable<Pool> {
 
   private Integer id;
 
@@ -76,5 +76,16 @@ public class Pool {
     }
 
   }
+
+
+@Override
+public int compareTo(Pool o) {
+	if(this.minCapacity == o.minCapacity) {
+		if(this.maxCapacity == o.maxCapacity)
+			return 0;
+		return this.maxCapacity < o.maxCapacity ? -1 : 1;
+	}
+	return this.minCapacity < o.minCapacity ? -1 : 1;
+}
 
 }
