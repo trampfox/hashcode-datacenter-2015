@@ -10,9 +10,9 @@ public class Pool {
 
   private Integer id;
 
-  private Integer minCapacity;
+  private Integer minCapacity = 0;
 
-  private Integer maxCapacity;
+  private Integer maxCapacity = 0;
 
   private List<Integer> servers = new ArrayList<>();
 
@@ -58,4 +58,18 @@ public class Pool {
   public void setRowCapacities(List<Integer> rowCapacities) {
     this.rowCapacities = rowCapacities;
   }
+
+  public void addServer(final Server server) {
+    servers.add(server.getId());
+
+    if (server.getCapacity() < minCapacity) {
+      this.minCapacity = server.getCapacity();
+    }
+
+    if (server.getCapacity() > maxCapacity) {
+      this.maxCapacity = server.getCapacity();
+    }
+
+  }
+
 }
