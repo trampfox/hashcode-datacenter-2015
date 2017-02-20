@@ -16,6 +16,12 @@ public class Server {
   private Double performanceIndex;
 
 
+  public Server(Integer id, String size, String capacity) {
+    this.id = id;
+    this.size = Integer.valueOf(size);
+    this.capacity = Integer.valueOf(capacity);
+  }
+
   public Integer getId() {
     return id;
   }

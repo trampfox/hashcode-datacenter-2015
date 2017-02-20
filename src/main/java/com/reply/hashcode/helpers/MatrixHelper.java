@@ -1,8 +1,13 @@
 package com.reply.hashcode.helpers;
 
+import com.reply.hashcode.Server;
+import com.reply.hashcode.UnavailableSlot;
+
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * @author Davide Monfrecola
@@ -52,6 +57,30 @@ public class MatrixHelper {
     return matrix;
   }
 
+  public static List<UnavailableSlot> readUnavailableSlots(final Map<String, Integer> parameters, final List<String> lines) {
+    final List<UnavailableSlot> unavailableSlot = new ArrayList<>();
+    final Integer unavailableSlotNumber = parameters.get("unavailableSlots");
 
+    for(int i = 0;i < unavailableSlotNumber;i++) {
+      unavailableSlot.add(new UnavailableSlot(lines.get(i)));
+    }
+
+    return unavailableSlot;
+  }
+
+  public static List<Server> readServers(final Map<String, Integer> parameters, final List<String> lines) {
+    final List<Server> servers = new ArrayList<>();
+    final Integer unavailableSlotNumber = parameters.get("unavailableSlots");
+
+    final AtomicInteger count = new AtomicInteger();
+
+    lines.stream().skip(unavailableSlotNumber).forEach(line -> {
+      String[] tmp = line.split(" ");
+
+      servers.add(new Server(count.getAndIncrement(), tmp[0], tmp[1]));
+    });
+
+    return servers;
+  }
 
 }
