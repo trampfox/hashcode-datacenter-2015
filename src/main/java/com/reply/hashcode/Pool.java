@@ -59,7 +59,7 @@ public class Pool {
     this.rowCapacities = rowCapacities;
   }
 
-  public void addServer(final Server server) {
+  public void addServer(final Server server, final Integer rowId) {
     servers.add(server.getId());
 
     if (server.getCapacity() < minCapacity) {
@@ -70,6 +70,13 @@ public class Pool {
       this.maxCapacity = server.getCapacity();
     }
 
+    updateRowCapacity(server, rowId);
+  }
+
+  public void updateRowCapacity(final Server server, final Integer rowId) {
+    final Integer capacity = this.rowCapacities.get(rowId);
+
+    this.rowCapacities.set(rowId, capacity + server.getCapacity());
   }
 
 }
