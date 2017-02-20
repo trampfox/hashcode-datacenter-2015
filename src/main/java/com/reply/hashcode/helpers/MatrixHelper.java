@@ -68,8 +68,8 @@ public class MatrixHelper {
     return unavailableSlot;
   }
 
-  public static Map<Integer, Server> readServers(final Map<String, Integer> parameters, final List<String> lines) {
-    final Map<Integer, Server> servers = new HashMap<>();
+  public static ArrayList<Server> readServers(final Map<String, Integer> parameters, final List<String> lines) {
+    final ArrayList<Server> servers = new ArrayList<Server>();
     final Integer unavailableSlotNumber = parameters.get("unavailableSlots");
 
     final AtomicInteger count = new AtomicInteger();
@@ -77,7 +77,7 @@ public class MatrixHelper {
     lines.stream().skip(unavailableSlotNumber).forEach(line -> {
       String[] tmp = line.split(" ");
       Integer id = count.getAndIncrement();
-      servers.put(id, new Server(id, Integer.valueOf(tmp[0]), Integer.valueOf(tmp[1])));
+      servers.add(new Server(id, Integer.valueOf(tmp[0]), Integer.valueOf(tmp[1])));
     });
 
     return servers;
