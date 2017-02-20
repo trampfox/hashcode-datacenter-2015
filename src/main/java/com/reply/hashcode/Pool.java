@@ -65,11 +65,11 @@ public class Pool implements Comparable<Pool> {
     this.rowCapacities = rowCapacities;
   }
 
-  public void addServer(final Server server, Integer rowIdx) {
+  public void addServer(final Server server, final Integer rowId) {
     servers.add(server.getId());
     this.maxCapacity += server.getCapacity();
-    int newCap = this.rowCapacities.get(rowIdx) + server.getCapacity();
-    this.rowCapacities.set(rowIdx, newCap);
+    int newCap = this.rowCapacities.get(rowId) + server.getCapacity();
+    this.rowCapacities.set(rowId, newCap);
     int min = Integer.MAX_VALUE;
     for(Integer rc : rowCapacities) {
     	if(rc < min)
@@ -77,6 +77,13 @@ public class Pool implements Comparable<Pool> {
     }
     this.minCapacity = min;
 
+    updateRowCapacity(server, rowId);
+  }
+
+  public void updateRowCapacity(final Server server, final Integer rowId) {
+    final Integer capacity = this.rowCapacities.get(rowId);
+
+    this.rowCapacities.set(rowId, capacity + server.getCapacity());
   }
 
 

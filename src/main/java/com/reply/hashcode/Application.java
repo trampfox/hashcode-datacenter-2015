@@ -14,12 +14,13 @@ import com.reply.hashcode.helpers.MatrixHelper;
  */
 public class Application {
 
-	static Integer[][] datacenterMatrix;
-	static Integer rows, slots, poolsNum, serversNum;
-	
+  static Integer[][] datacenterMatrix;
+  static Integer rows, slots, poolsNum, serversNum;
+
   public static void main(String[] args) {
     FileHelper fileHelper = new FileHelper();
     String inputFilePath = "C:\\Users\\m.omodei\\Documents\\HashCode\\input.test\\dcexample.in"; //args[0];
+    String outputFilePath = args[1];
     List<String> header = fileHelper.readFileHeader(inputFilePath);
     Map<String, Integer> parameters = MatrixHelper.readMatrixParameters(header);
     List<String> lines = fileHelper.readFileContentByLine(inputFilePath);
@@ -70,9 +71,8 @@ public class Application {
     	}
     }
     
-    
   }
-  
+
   private static boolean insert(Server s, Pool p, Integer rowIdx) {
 	  int start = -1, size = 0;
 	  for(Integer i = 0; i < slots; i++) {

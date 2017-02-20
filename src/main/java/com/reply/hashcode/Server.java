@@ -12,6 +12,10 @@ public class Server implements Comparable<Server> {
 
   private Double performanceIndex;
 
+  private Integer row;
+
+  private Integer slot;
+
   public Server(Integer id, Integer size, Integer capacity) {
     this.id = id;
     this.size = size;
@@ -60,6 +64,21 @@ public class Server implements Comparable<Server> {
     this.performanceIndex = performanceIndex;
   }
 
+  public Integer getRow() {
+    return row;
+  }
+
+  public void setRow(Integer row) {
+    this.row = row;
+  }
+
+  public Integer getSlot() {
+    return slot;
+  }
+
+  public void setSlot(Integer slot) {
+    this.slot = slot;
+  }
 
   @Override
   public int compareTo(Server arg0) {
