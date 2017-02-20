@@ -58,10 +58,10 @@ public class OutputRow {
     String output;
 
     if (rowId == null && slotId == null) {
-      output = "";
+      output = "x\r\n";
     }
     else {
-       output = rowId + " " + slotId + " " + poolId + "\n";
+       output = rowId + " " + slotId + " " + poolId + "\r\n";
     }
 
     return output;

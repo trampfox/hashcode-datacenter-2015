@@ -21,8 +21,9 @@ public class Application {
 
   public static void main(String[] args) {
     FileHelper fileHelper = new FileHelper();
-    String inputFilePath = "C:\\Users\\m.omodei\\Documents\\HashCode\\input.test\\dcexample.in"; //args[0];
-    String outputFilePath = "C:\\Users\\m.omodei\\Documents\\HashCode\\input.test\\dcexample.out"; // args[1];
+    String folder = "C:\\Users\\m.omodei\\Documents\\HashCode\\input\\";
+    String inputFilePath = folder + "2.in"; //args[0];
+    String outputFilePath = folder + "2.out";
     List<String> header = fileHelper.readFileHeader(inputFilePath);
     Map<String, Integer> parameters = MatrixHelper.readMatrixParameters(header);
     List<String> lines = fileHelper.readFileContentByLine(inputFilePath);
@@ -44,17 +45,20 @@ public class Application {
     }
     Collections.sort(pools);
     //for(Pool tmp : pools)
-    //	System.out.println("");
-    System.out.println("Start");
+    //	//System.out.println("");
+    //System.out.println("Start");
+    int serverCount = 0;
     for(Server s : sortedServers) {
-    	System.out.println("Server " + s.getId());
+    	serverCount++;
+    	if(serverCount % 1000 == 0)
+    		System.out.println("Server " + serverCount + "/" + serversNum);
     	boolean inserted = false;
     	List<Integer> removed = new ArrayList<Integer>();
     	int poolTry = 0, rowTry = 0;
     	while(!inserted && poolTry < poolsNum) {
     		poolTry++;
 	    	Pool p = sortedPools.poll();
-	    	System.out.println("Pool " + p.getId());
+	    	//System.out.println("Pool " + p.getId());
     		removed.add(p.getId());
 	    	Set<Integer> tryedRows = new HashSet<Integer>();
 	    	while(!inserted && rowTry < rows) {
@@ -68,7 +72,7 @@ public class Application {
 		    		}		
 		    	}
 	    		rowTry++;
-	    		System.out.println("Row " + minIdx);
+	    		//System.out.println("Row " + minIdx);
 	    		tryedRows.add(minIdx);
 		    	inserted = insert(s, p, minIdx);
 	    	}
@@ -78,7 +82,7 @@ public class Application {
     		sortedPools.add(pools.get(idx));
     	}
     }
-    fileHelper.writeOutputFile(parameters, servers, datacenterMatrix, outputFilePath);
+    fileHelper.writeOutputFile(servers, outputFilePath);
     
   }
 
@@ -93,6 +97,10 @@ public class Application {
 			  else {
 				  size++;
 			  }
+		  }
+		  else {
+			  start = -1;
+			  size = 0;
 		  }
 		  if(size == s.getSize()) {
 			  for(Integer j = 0; j < s.getSize(); j++)
