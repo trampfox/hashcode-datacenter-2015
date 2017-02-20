@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c310a28e-e699-4175-bb9f-57a6d490d0d0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/reply/hashcode/UnavailableSlot.java" />
+    <list default="true" id="b4a22679-404e-47be-ae6f-20f904d26e31" name="Failed commit: Default" comment="Merge branch 'master' of https://github.com/trampfox/hashcode-datacenter-2015&#10;&#10;# Conflicts:&#10;#&#9;src/main/java/com/reply/hashcode/Server.java&#10;">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/com/reply/hashcode/Application.class" afterPath="$PROJECT_DIR$/build/classes/main/com/reply/hashcode/Application.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/com/reply/hashcode/helpers/MatrixHelper.class" afterPath="$PROJECT_DIR$/build/classes/main/com/reply/hashcode/helpers/MatrixHelper.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/reply/hashcode/Application.java" afterPath="$PROJECT_DIR$/src/main/java/com/reply/hashcode/Application.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/reply/hashcode/Server.java" afterPath="$PROJECT_DIR$/src/main/java/com/reply/hashcode/Server.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/reply/hashcode/helpers/MatrixHelper.java" afterPath="$PROJECT_DIR$/src/main/java/com/reply/hashcode/helpers/MatrixHelper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/resources/input.txt" afterPath="$PROJECT_DIR$/src/main/java/resources/input.txt" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -51,10 +48,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MatrixHelper.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MatrixHelper.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/reply/hashcode/helpers/MatrixHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1230">
+            <state relative-caret-position="664">
               <caret line="82" column="0" lean-forward="false" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -113,32 +110,32 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Server.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Server.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/reply/hashcode/Server.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="35" column="0" lean-forward="true" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+            <state relative-caret-position="105">
+              <caret line="14" column="35" lean-forward="false" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="35" />
               <folding>
-                <element signature="e#406#407#0" expanded="true" />
-                <element signature="e#425#426#0" expanded="true" />
-                <element signature="e#460#461#0" expanded="true" />
-                <element signature="e#482#483#0" expanded="true" />
+                <element signature="e#458#459#0" expanded="true" />
+                <element signature="e#477#478#0" expanded="true" />
                 <element signature="e#512#513#0" expanded="true" />
-                <element signature="e#533#534#0" expanded="true" />
-                <element signature="e#572#573#0" expanded="true" />
-                <element signature="e#598#599#0" expanded="true" />
-                <element signature="e#632#633#0" expanded="true" />
-                <element signature="e#657#658#0" expanded="true" />
-                <element signature="e#704#705#0" expanded="true" />
-                <element signature="e#738#739#0" expanded="true" />
-                <element signature="e#770#771#0" expanded="true" />
-                <element signature="e#793#794#0" expanded="true" />
-                <element signature="e#836#837#0" expanded="true" />
-                <element signature="e#866#867#0" expanded="true" />
-                <element signature="e#907#908#0" expanded="true" />
-                <element signature="e#940#941#0" expanded="true" />
-                <element signature="e#1002#1003#0" expanded="true" />
-                <element signature="e#1052#1053#0" expanded="true" />
+                <element signature="e#534#535#0" expanded="true" />
+                <element signature="e#564#565#0" expanded="true" />
+                <element signature="e#585#586#0" expanded="true" />
+                <element signature="e#624#625#0" expanded="true" />
+                <element signature="e#650#651#0" expanded="true" />
+                <element signature="e#684#685#0" expanded="true" />
+                <element signature="e#709#710#0" expanded="true" />
+                <element signature="e#756#757#0" expanded="true" />
+                <element signature="e#790#791#0" expanded="true" />
+                <element signature="e#822#823#0" expanded="true" />
+                <element signature="e#845#846#0" expanded="true" />
+                <element signature="e#888#889#0" expanded="true" />
+                <element signature="e#918#919#0" expanded="true" />
+                <element signature="e#959#960#0" expanded="true" />
+                <element signature="e#992#993#0" expanded="true" />
+                <element signature="e#1054#1055#0" expanded="true" />
+                <element signature="e#1104#1105#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -537,10 +534,10 @@
         <option value="$PROJECT_DIR$/src/main/java/com/reply/hashcode/Pool.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/reply/hashcode/helpers/FileHelper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/reply/hashcode/UnavailableSlot.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/reply/hashcode/helpers/MatrixHelper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/reply/hashcode/Application.java" />
         <option value="$PROJECT_DIR$/src/main/java/resources/input.txt" />
         <option value="$PROJECT_DIR$/src/main/java/com/reply/hashcode/Server.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/reply/hashcode/helpers/MatrixHelper.java" />
       </list>
     </option>
   </component>
@@ -685,7 +682,7 @@
     <property name="GO_FMT" value="false" />
   </component>
   <component name="RunManager" selected="Application.Application">
-    <configuration default="false" name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="Application" type="Application" factoryName="Application" singleton="true" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="com.reply.hashcode.*" />
@@ -1119,14 +1116,14 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="c310a28e-e699-4175-bb9f-57a6d490d0d0" name="Default" comment="" />
+      <changelist id="" name="Default" comment="" />
       <created>1487424101165</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1487424101165</updated>
       <workItem from="1487424104010" duration="535000" />
       <workItem from="1487424797407" duration="4840000" />
-      <workItem from="1487580163864" duration="4953000" />
+      <workItem from="1487580163864" duration="5305000" />
     </task>
     <task id="LOCAL-00001" summary="Add basic data structures.">
       <created>1487586563919</created>
@@ -1135,11 +1132,18 @@
       <option name="project" value="LOCAL" />
       <updated>1487586563919</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Add read unavailable slots and servers helper methods.">
+      <created>1487588690230</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1487588690230</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10328000" />
+    <option name="totallyTimeSpent" value="10680000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="958" extended-state="0" />
@@ -1185,7 +1189,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add basic data structures." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add basic data structures." />
+    <MESSAGE value="Add read unavailable slots and servers helper methods." />
+    <MESSAGE value="Merge branch 'master' of https://github.com/trampfox/hashcode-datacenter-2015&#10;&#10;# Conflicts:&#10;#&#9;src/main/java/com/reply/hashcode/Server.java&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'master' of https://github.com/trampfox/hashcode-datacenter-2015&#10;&#10;# Conflicts:&#10;#&#9;src/main/java/com/reply/hashcode/Server.java&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1366,12 +1372,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/reply/hashcode/helpers/MatrixHelper.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/reply/hashcode/Server.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1230">
-          <caret line="82" column="0" lean-forward="false" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
+        <state relative-caret-position="105">
+          <caret line="14" column="35" lean-forward="false" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="35" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#458#459#0" expanded="true" />
+            <element signature="e#477#478#0" expanded="true" />
+            <element signature="e#512#513#0" expanded="true" />
+            <element signature="e#534#535#0" expanded="true" />
+            <element signature="e#564#565#0" expanded="true" />
+            <element signature="e#585#586#0" expanded="true" />
+            <element signature="e#624#625#0" expanded="true" />
+            <element signature="e#650#651#0" expanded="true" />
+            <element signature="e#684#685#0" expanded="true" />
+            <element signature="e#709#710#0" expanded="true" />
+            <element signature="e#756#757#0" expanded="true" />
+            <element signature="e#790#791#0" expanded="true" />
+            <element signature="e#822#823#0" expanded="true" />
+            <element signature="e#845#846#0" expanded="true" />
+            <element signature="e#888#889#0" expanded="true" />
+            <element signature="e#918#919#0" expanded="true" />
+            <element signature="e#959#960#0" expanded="true" />
+            <element signature="e#992#993#0" expanded="true" />
+            <element signature="e#1054#1055#0" expanded="true" />
+            <element signature="e#1104#1105#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1386,31 +1411,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/reply/hashcode/Server.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/reply/hashcode/helpers/MatrixHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="35" column="0" lean-forward="true" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+        <state relative-caret-position="664">
+          <caret line="82" column="0" lean-forward="false" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
           <folding>
-            <element signature="e#406#407#0" expanded="true" />
-            <element signature="e#425#426#0" expanded="true" />
-            <element signature="e#460#461#0" expanded="true" />
-            <element signature="e#482#483#0" expanded="true" />
-            <element signature="e#512#513#0" expanded="true" />
-            <element signature="e#533#534#0" expanded="true" />
-            <element signature="e#572#573#0" expanded="true" />
-            <element signature="e#598#599#0" expanded="true" />
-            <element signature="e#632#633#0" expanded="true" />
-            <element signature="e#657#658#0" expanded="true" />
-            <element signature="e#704#705#0" expanded="true" />
-            <element signature="e#738#739#0" expanded="true" />
-            <element signature="e#770#771#0" expanded="true" />
-            <element signature="e#793#794#0" expanded="true" />
-            <element signature="e#836#837#0" expanded="true" />
-            <element signature="e#866#867#0" expanded="true" />
-            <element signature="e#907#908#0" expanded="true" />
-            <element signature="e#940#941#0" expanded="true" />
-            <element signature="e#1002#1003#0" expanded="true" />
-            <element signature="e#1052#1053#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
