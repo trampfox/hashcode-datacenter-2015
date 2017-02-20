@@ -1,9 +1,6 @@
 package com.reply.hashcode;
-
-/**
- * @author
- */
-public class Server {
+	
+public class Server implements Comparable<Server> {
 
   private Integer id;
 
@@ -15,7 +12,14 @@ public class Server {
 
   private Double performanceIndex;
 
-
+  public Server(Integer id, Integer size, Integer capacity) {
+	  this.id = id;
+	  this.size = size;
+	  this.capacity = capacity;
+	  this.performanceIndex = capacity.doubleValue() / size.doubleValue();
+  }
+  
+  
   public Integer getId() {
     return id;
   }
@@ -55,4 +59,13 @@ public class Server {
   public void setPerformanceIndex(Double performanceIndex) {
     this.performanceIndex = performanceIndex;
   }
+
+
+@Override
+public int compareTo(Server arg0) {
+	return this.performanceIndex == arg0.performanceIndex ? 0 :
+		this.performanceIndex < arg0.performanceIndex ? -1 : 1;
+}
+  
+  
 }
