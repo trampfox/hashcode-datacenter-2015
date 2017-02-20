@@ -68,19 +68,37 @@ public class MatrixHelper {
     return unavailableSlot;
   }
 
-  public static List<Server> readServers(final Map<String, Integer> parameters, final List<String> lines) {
-    final List<Server> servers = new ArrayList<>();
+  public static Map<Integer, Server> readServers(final Map<String, Integer> parameters, final List<String> lines) {
+    final Map<Integer, Server> servers = new HashMap<>();
     final Integer unavailableSlotNumber = parameters.get("unavailableSlots");
 
     final AtomicInteger count = new AtomicInteger();
 
     lines.stream().skip(unavailableSlotNumber).forEach(line -> {
       String[] tmp = line.split(" ");
-
-      servers.add(new Server(count.getAndIncrement(), Integer.valueOf(tmp[0]), Integer.valueOf(tmp[1])));
+      Integer id = count.getAndIncrement();
+      servers.put(id, new Server(id, Integer.valueOf(tmp[0]), Integer.valueOf(tmp[1])));
     });
 
     return servers;
+  }
+
+  public static Integer[][] buildDatacenterMatrix(final Map<String, Integer> parameters,
+                                                  final List<UnavailableSlot> unavailableSlots) {
+    final Integer rows = parameters.get("rows");
+    final Integer columns = parameters.get("slots");
+    final Integer[][] datacenterMatrix = new Integer[rows][columns];
+
+    // init matrix, mark all slot as empty
+    for (int i = 0;i < rows;i++) {
+      for (int j = 0;j < columns;j++) {
+        datacenterMatrix[i][j] = -2;
+      }
+    }
+    // put unavailable slot in datacenter matrix
+    unavailableSlots.forEach(uSlot -> datacenterMatrix[uSlot.getX()][uSlot.getY()] = -1);
+
+    return datacenterMatrix;
   }
 
 }

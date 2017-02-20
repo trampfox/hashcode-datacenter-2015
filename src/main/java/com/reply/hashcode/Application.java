@@ -20,7 +20,9 @@ public class Application {
 
     List<String> lines = fileHelper.readFileContentByLine(inputFilePath);
     List<UnavailableSlot> unavailableSlots = MatrixHelper.readUnavailableSlots(parameters, lines);
-    List<Server> servers = MatrixHelper.readServers(parameters, lines);
+    Map<Integer, Server> servers = MatrixHelper.readServers(parameters, lines);
+
+    final Integer[][] datacenterMatrix = MatrixHelper.buildDatacenterMatrix(parameters, unavailableSlots);
 
     System.out.println("Matrix parameters: ");
     MatrixHelper.readMatrixParameters(header);
