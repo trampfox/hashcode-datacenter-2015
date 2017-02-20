@@ -52,13 +52,6 @@ public class FileHelper {
     final Integer columns = parameters.get("slots");
     final List<OutputRow> outputRows = new ArrayList<>();
 
-    // TEST
-    datacenterMatrix[0][0] = 1;
-    datacenterMatrix[0][1] = 1;
-    datacenterMatrix[0][2] = 1;
-    datacenterMatrix[1][2] = 2;
-    datacenterMatrix[1][3] = 2;
-
     for (Map.Entry<Integer, Server> server: servers.entrySet()) {
       outputRows.add(new OutputRow(server.getKey(), server.getValue().getRow(), server.getValue().getSlot(), server.getValue().getPoolId()));
     }
