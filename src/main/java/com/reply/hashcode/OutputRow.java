@@ -55,6 +55,15 @@ public class OutputRow {
 
   @Override
   public String toString() {
-    return rowId + " " + slotId + " " + poolId + "\n";
+    String output;
+
+    if (rowId == null && slotId == null) {
+      output = "";
+    }
+    else {
+       output = rowId + " " + slotId + " " + poolId + "\n";
+    }
+
+    return output;
   }
 }

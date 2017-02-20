@@ -44,16 +44,12 @@ public class FileHelper {
     return header;
   }
 
-  public void writeOutputFile(final Map<String, Integer> parameters,
-                              final Map<Integer, Server> servers,
-                              final Integer[][] datacenterMatrix,
+  public void writeOutputFile(final List<Server> servers,
                               final String outputFilename) {
-    final Integer rows = parameters.get("rows");
-    final Integer columns = parameters.get("slots");
     final List<OutputRow> outputRows = new ArrayList<>();
 
-    for (Map.Entry<Integer, Server> server: servers.entrySet()) {
-      outputRows.add(new OutputRow(server.getKey(), server.getValue().getRow(), server.getValue().getSlot(), server.getValue().getPoolId()));
+    for (Server server: servers) {
+      outputRows.add(new OutputRow(server.getId(), server.getRow(), server.getSlot(), server.getPoolId()));
     }
 
     //Use try-with-resource to get auto-closeable writer instance

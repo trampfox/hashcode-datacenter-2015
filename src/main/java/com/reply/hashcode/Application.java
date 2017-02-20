@@ -19,7 +19,7 @@ public class Application {
 
   public static void main(String[] args) {
     FileHelper fileHelper = new FileHelper();
-    String inputFilePath = "C:\\Users\\m.omodei\\Documents\\HashCode\\input.test\\dcexample.in"; //args[0];
+    String inputFilePath = args[0];
     String outputFilePath = args[1];
     List<String> header = fileHelper.readFileHeader(inputFilePath);
     Map<String, Integer> parameters = MatrixHelper.readMatrixParameters(header);

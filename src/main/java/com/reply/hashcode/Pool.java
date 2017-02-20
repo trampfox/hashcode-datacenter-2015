@@ -68,8 +68,7 @@ public class Pool implements Comparable<Pool> {
   public void addServer(final Server server, final Integer rowId) {
     servers.add(server.getId());
     this.maxCapacity += server.getCapacity();
-    int newCap = this.rowCapacities.get(rowId) + server.getCapacity();
-    this.rowCapacities.set(rowId, newCap);
+
     int min = Integer.MAX_VALUE;
     for(Integer rc : rowCapacities) {
     	if(rc < min)
@@ -92,9 +91,9 @@ public int compareTo(Pool o) {
 	if(this.minCapacity == o.minCapacity) {
 		if(this.maxCapacity == o.maxCapacity)
 			return 0;
-		return this.maxCapacity < o.maxCapacity ? 1 : -1;
+		return this.maxCapacity < o.maxCapacity ? -1 : 1;
 	}
-	return this.minCapacity < o.minCapacity ? 1 : -1;
+	return this.minCapacity < o.minCapacity ? -1 : 1;
 }
 
 }
