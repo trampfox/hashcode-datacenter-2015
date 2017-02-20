@@ -20,7 +20,7 @@ public class Server implements Comparable<Server> {
     this.id = id;
     this.size = size;
     this.capacity = capacity;
-    this.performanceIndex = capacity.doubleValue() / size.doubleValue();
+    this.performanceIndex = capacity.doubleValue() * size.doubleValue();
   }
 
 
@@ -83,7 +83,7 @@ public class Server implements Comparable<Server> {
   @Override
   public int compareTo(Server arg0) {
     return this.performanceIndex == arg0.performanceIndex ? 0 :
-        this.performanceIndex < arg0.performanceIndex ? -1 : 1;
+        this.performanceIndex < arg0.performanceIndex ? 1 : -1;
   }
 
 
