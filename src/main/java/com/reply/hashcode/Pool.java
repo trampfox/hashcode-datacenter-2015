@@ -18,6 +18,11 @@ public class Pool {
 
   private List<Integer> rowCapacities = new ArrayList<>();
 
+  public Pool(int id) {
+	  this.id = id;
+	  
+  }
+  
 
   public Integer getId() {
     return id;
