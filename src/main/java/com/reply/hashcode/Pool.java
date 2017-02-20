@@ -18,9 +18,10 @@ public class Pool implements Comparable<Pool> {
 
   private List<Integer> rowCapacities = new ArrayList<>();
 
-  public Pool(int id) {
+  public Pool(int id, int rows) {
 	  this.id = id;
-	  
+	  for(int i = 0; i < rows; i++)
+		  rowCapacities.add(0);
   }
   
 
@@ -64,16 +65,17 @@ public class Pool implements Comparable<Pool> {
     this.rowCapacities = rowCapacities;
   }
 
-  public void addServer(final Server server) {
+  public void addServer(final Server server, Integer rowIdx) {
     servers.add(server.getId());
-
-    if (server.getCapacity() < minCapacity) {
-      this.minCapacity = server.getCapacity();
+    this.maxCapacity += server.getCapacity();
+    int newCap = this.rowCapacities.get(rowIdx) + server.getCapacity();
+    this.rowCapacities.set(rowIdx, newCap);
+    int min = Integer.MAX_VALUE;
+    for(Integer rc : rowCapacities) {
+    	if(rc < min)
+    		min = rc;
     }
-
-    if (server.getCapacity() > maxCapacity) {
-      this.maxCapacity = server.getCapacity();
-    }
+    this.minCapacity = min;
 
   }
 

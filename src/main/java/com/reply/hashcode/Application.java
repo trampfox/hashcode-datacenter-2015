@@ -19,14 +19,17 @@ public class Application {
 	
   public static void main(String[] args) {
     FileHelper fileHelper = new FileHelper();
-    String inputFilePath = args[0];
-
+    String inputFilePath = "C:\\Users\\m.omodei\\Documents\\HashCode\\input.test\\dcexample.in"; //args[0];
     List<String> header = fileHelper.readFileHeader(inputFilePath);
     Map<String, Integer> parameters = MatrixHelper.readMatrixParameters(header);
-
     List<String> lines = fileHelper.readFileContentByLine(inputFilePath);
     List<UnavailableSlot> unavailableSlots = MatrixHelper.readUnavailableSlots(parameters, lines);
     Map<Integer, Server> servers = MatrixHelper.readServers(parameters, lines);
+    datacenterMatrix = MatrixHelper.buildDatacenterMatrix(parameters, unavailableSlots);
+    rows = parameters.get("rows");
+    slots = parameters.get("slots");
+    poolsNum = parameters.get("pools");
+    serversNum = parameters.get("servers");
     List<Server> sortedServers = new ArrayList<Server>();
     for(Integer key : servers.keySet())
     	sortedServers.add(servers.get(key));
@@ -34,32 +37,33 @@ public class Application {
     List<Pool> pools = new ArrayList<Pool>();
     PriorityQueue<Pool> sortedPools = new PriorityQueue<Pool>();
     for(int i = 0; i < poolsNum; i++) {
-    	Pool tmp = new Pool(i);
+    	Pool tmp = new Pool(i, rows);
     	pools.add(tmp);
     	sortedPools.add(tmp);
     }
     Collections.sort(pools);
-    datacenterMatrix = MatrixHelper.buildDatacenterMatrix(parameters, unavailableSlots);
-    rows = parameters.get("rows");
-    slots = parameters.get("slots");
-    poolsNum = parameters.get("pools");
-    serversNum = parameters.get("servers");
+    //for(Pool tmp : pools)
+    //	System.out.println("");
+    System.out.println("Start");
     for(Server s : sortedServers) {
+    	System.out.println("Server " + s.getId());
     	boolean inserted = false;
     	List<Integer> removed = new ArrayList<Integer>();
     	int poolTry = 0;
     	while(!inserted && poolTry < poolsNum) {
     		poolTry++;
 	    	Pool p = sortedPools.poll();
-	    	removed.add(p.getId());
+	    	System.out.println("Pool " + p.getId());
+    		removed.add(p.getId());
 	    	Integer min = Integer.MAX_VALUE, minIdx = -1;
-	    	for(int i = 0; i < p.getRowCapacities().size(); i++) {
+	    	for(int i = 0; i < rows; i++) {
 	    		if(p.getRowCapacities().get(i) < min) {
 	    			min = p.getRowCapacities().get(i);
 	    			minIdx = i;
 	    		}		
 	    	}
 	    	inserted = insert(s, p, minIdx);
+	    	
     	}
     	for(Integer idx : removed) {
     		sortedPools.add(pools.get(idx));
@@ -73,16 +77,19 @@ public class Application {
 	  int start = -1, size = 0;
 	  for(Integer i = 0; i < slots; i++) {
 		  if(datacenterMatrix[rowIdx][i] == -2) {
-			  if(start != -1) {
+			  if(start == -1) {
 				  start = i;
 				  size = 1;
 			  }
-			  else
+			  else {
 				  size++;
+			  }
 		  }
 		  if(size == s.getSize()) {
 			  for(Integer j = 0; j < s.getSize(); j++)
 				  datacenterMatrix[rowIdx][j + start] = s.getId();
+			  //s.setRow(rowIdx);
+			  //s.setSlot(start);
 			  p.addServer(s, rowIdx);
 			  return true;
 		  }
