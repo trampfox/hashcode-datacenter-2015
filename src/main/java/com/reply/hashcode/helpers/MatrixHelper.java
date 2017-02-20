@@ -13,9 +13,10 @@ public class MatrixHelper {
     Map<String, Integer> parameters = new HashMap<>();
 
     parameters.put("rows", Integer.valueOf(headerValues.get(0)));
-    parameters.put("columns", Integer.valueOf(headerValues.get(1)));
-    parameters.put("minIngredientPerSlice", Integer.valueOf(headerValues.get(2)));
-    parameters.put("maxCellsPerSlice", Integer.valueOf(headerValues.get(3)));
+    parameters.put("slots", Integer.valueOf(headerValues.get(1)));
+    parameters.put("unavailableSlots", Integer.valueOf(headerValues.get(2)));
+    parameters.put("pools", Integer.valueOf(headerValues.get(3)));
+    parameters.put("severs", Integer.valueOf(headerValues.get(3)));
 
     System.out.println(
         String.format("%d rows, %d columns, min %d of each ingredient per slice, max %d cells per slice",
