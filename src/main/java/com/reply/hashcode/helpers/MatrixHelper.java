@@ -77,7 +77,7 @@ public class MatrixHelper {
     lines.stream().skip(unavailableSlotNumber).forEach(line -> {
       String[] tmp = line.split(" ");
 
-      servers.add(new Server(count.getAndIncrement(), tmp[0], tmp[1]));
+      servers.add(new Server(count.getAndIncrement(), Integer.valueOf(tmp[0]), Integer.valueOf(tmp[1])));
     });
 
     return servers;
