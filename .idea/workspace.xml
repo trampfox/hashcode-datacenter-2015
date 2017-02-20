@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b4a22679-404e-47be-ae6f-20f904d26e31" name="Failed commit: Default" comment="Merge branch 'master' of https://github.com/trampfox/hashcode-datacenter-2015&#10;&#10;# Conflicts:&#10;#&#9;src/main/java/com/reply/hashcode/Server.java&#10;">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/com/reply/hashcode/Application.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/com/reply/hashcode/helpers/FileHelper.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/com/reply/hashcode/helpers/MatrixHelper.class" afterPath="" />
+    <list default="true" id="b4a22679-404e-47be-ae6f-20f904d26e31" name="Failed commit: Default" comment="Update output writer.">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/reply/hashcode/Application.java" afterPath="$PROJECT_DIR$/src/main/java/com/reply/hashcode/Application.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/reply/hashcode/helpers/MatrixHelper.java" afterPath="$PROJECT_DIR$/src/main/java/com/reply/hashcode/helpers/MatrixHelper.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -38,28 +37,30 @@
       <file leaf-file-name="Application.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/reply/hashcode/Application.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="69" lean-forward="false" selection-start-line="22" selection-start-column="69" selection-end-line="22" selection-end-column="69" />
+            <state relative-caret-position="634">
+              <caret line="79" column="5" lean-forward="false" selection-start-line="79" selection-start-column="5" selection-end-line="79" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <marker date="1487597808000" expanded="true" signature="3456:3458" ph="//..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MatrixHelper.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MatrixHelper.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/reply/hashcode/helpers/MatrixHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="379">
+            <state relative-caret-position="394">
               <caret line="82" column="0" lean-forward="false" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#2456#2464#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
@@ -74,16 +75,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="225">
               <caret line="15" column="36" lean-forward="false" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
-              <folding>
-                <element signature="e#338#339#0" expanded="true" />
-                <element signature="e#356#357#0" expanded="true" />
-                <element signature="e#389#390#0" expanded="true" />
-                <element signature="e#409#410#0" expanded="true" />
-                <element signature="e#436#437#0" expanded="true" />
-                <element signature="e#454#455#0" expanded="true" />
-                <element signature="e#487#488#0" expanded="true" />
-                <element signature="e#507#508#0" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -91,29 +83,10 @@
       <file leaf-file-name="Pool.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/reply/hashcode/Pool.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="26" lean-forward="false" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
+            <state relative-caret-position="318">
+              <caret line="95" column="49" lean-forward="false" selection-start-line="95" selection-start-column="49" selection-end-line="95" selection-end-column="49" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#385#386#0" expanded="true" />
-                <element signature="e#420#421#0" expanded="true" />
-                <element signature="e#442#443#0" expanded="true" />
-                <element signature="e#479#480#0" expanded="true" />
-                <element signature="e#507#508#0" expanded="true" />
-                <element signature="e#560#561#0" expanded="true" />
-                <element signature="e#600#601#0" expanded="true" />
-                <element signature="e#637#638#0" expanded="true" />
-                <element signature="e#665#666#0" expanded="true" />
-                <element signature="e#718#719#0" expanded="true" />
-                <element signature="e#758#759#0" expanded="true" />
-                <element signature="e#797#798#0" expanded="true" />
-                <element signature="e#821#822#0" expanded="true" />
-                <element signature="e#872#873#0" expanded="true" />
-                <element signature="e#904#905#0" expanded="true" />
-                <element signature="e#949#950#0" expanded="true" />
-                <element signature="e#979#980#0" expanded="true" />
-                <element signature="e#1042#1043#0" expanded="true" />
-                <element signature="e#1086#1087#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -122,30 +95,9 @@
       <file leaf-file-name="Server.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/reply/hashcode/Server.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="14" column="35" lean-forward="false" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="35" />
-              <folding>
-                <element signature="e#458#459#0" expanded="true" />
-                <element signature="e#477#478#0" expanded="true" />
-                <element signature="e#512#513#0" expanded="true" />
-                <element signature="e#534#535#0" expanded="true" />
-                <element signature="e#564#565#0" expanded="true" />
-                <element signature="e#585#586#0" expanded="true" />
-                <element signature="e#624#625#0" expanded="true" />
-                <element signature="e#650#651#0" expanded="true" />
-                <element signature="e#684#685#0" expanded="true" />
-                <element signature="e#709#710#0" expanded="true" />
-                <element signature="e#756#757#0" expanded="true" />
-                <element signature="e#790#791#0" expanded="true" />
-                <element signature="e#822#823#0" expanded="true" />
-                <element signature="e#845#846#0" expanded="true" />
-                <element signature="e#888#889#0" expanded="true" />
-                <element signature="e#918#919#0" expanded="true" />
-                <element signature="e#959#960#0" expanded="true" />
-                <element signature="e#992#993#0" expanded="true" />
-                <element signature="e#1054#1055#0" expanded="true" />
-                <element signature="e#1104#1105#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="-105">
+              <caret line="14" column="22" lean-forward="false" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -163,11 +115,21 @@
       <file leaf-file-name="FileHelper.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/reply/hashcode/helpers/FileHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="28" column="3" lean-forward="false" selection-start-line="28" selection-start-column="3" selection-end-line="28" selection-end-column="3" />
+            <state relative-caret-position="574">
+              <caret line="50" column="13" lean-forward="true" selection-start-line="50" selection-start-column="13" selection-end-line="50" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OutputRow.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/reply/hashcode/OutputRow.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="634">
+              <caret line="63" column="59" lean-forward="false" selection-start-line="63" selection-start-column="59" selection-end-line="63" selection-end-column="59" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -540,14 +502,15 @@
       <list>
         <option value="$PROJECT_DIR$/src/main/java/com/reply/hashcode/FileHelper.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
-        <option value="$PROJECT_DIR$/src/main/java/com/reply/hashcode/Pool.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/reply/hashcode/helpers/FileHelper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/reply/hashcode/UnavailableSlot.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/reply/hashcode/Application.java" />
         <option value="$PROJECT_DIR$/src/main/java/resources/input.txt" />
         <option value="$PROJECT_DIR$/src/main/java/com/reply/hashcode/Server.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/reply/hashcode/helpers/MatrixHelper.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/main/java/com/reply/hashcode/Application.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/reply/hashcode/Pool.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/reply/hashcode/OutputRow.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/reply/hashcode/helpers/FileHelper.java" />
       </list>
     </option>
   </component>
@@ -577,8 +540,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -610,10 +571,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -675,6 +632,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -701,7 +660,7 @@
       </extension>
       <option name="MAIN_CLASS_NAME" value="com.reply.hashcode.Application" />
       <option name="VM_PARAMETERS" value="" />
-      <option name="PROGRAM_PARAMETERS" value="&quot;$PROJECT_DIR$/src/main/java/resources/input.txt&quot;" />
+      <option name="PROGRAM_PARAMETERS" value="&quot;$PROJECT_DIR$/src/main/java/resources/input.txt&quot; &quot;$PROJECT_DIR$/src/main/java/resources/output.out&quot;" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -1126,7 +1085,6 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="" name="Default" comment="" />
       <created>1487424101165</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -1134,6 +1092,7 @@
       <workItem from="1487424104010" duration="535000" />
       <workItem from="1487424797407" duration="4840000" />
       <workItem from="1487580163864" duration="5585000" />
+      <workItem from="1487596125195" duration="1679000" />
     </task>
     <task id="LOCAL-00001" summary="Add basic data structures.">
       <created>1487586563919</created>
@@ -1156,11 +1115,18 @@
       <option name="project" value="LOCAL" />
       <updated>1487589159318</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Update output writer.">
+      <created>1487597764580</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1487597764580</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10960000" />
+    <option name="totallyTimeSpent" value="12639000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="958" extended-state="0" />
@@ -1173,22 +1139,22 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290993" sideWeight="0.502442" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290993" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3290993" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3290993" sideWeight="0.497558" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290993" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290993" sideWeight="0.497558" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25579977" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25885227" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3995381" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.77367204" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1201,6 +1167,24 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="processedProjectFiles" value="true" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
@@ -1208,21 +1192,27 @@
     <MESSAGE value="Add basic data structures." />
     <MESSAGE value="Add read unavailable slots and servers helper methods." />
     <MESSAGE value="Merge branch 'master' of https://github.com/trampfox/hashcode-datacenter-2015&#10;&#10;# Conflicts:&#10;#&#9;src/main/java/com/reply/hashcode/Server.java&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'master' of https://github.com/trampfox/hashcode-datacenter-2015&#10;&#10;# Conflicts:&#10;#&#9;src/main/java/com/reply/hashcode/Server.java&#10;" />
+    <MESSAGE value="Update output writer." />
+    <option name="LAST_COMMIT_MESSAGE" value="Update output writer." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/reply/hashcode/helpers/MatrixHelper.java</url>
-          <line>82</line>
+          <url>file://$PROJECT_DIR$/src/main/java/com/reply/hashcode/Application.java</url>
+          <line>49</line>
           <properties />
-          <option name="timeStamp" value="8" />
+          <option name="timeStamp" value="11" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="9" />
+      <option name="time" value="13" />
     </breakpoint-manager>
-    <watches-manager />
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="pools" />
+        <watch expression="sortedPools" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -1231,10 +1221,93 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/com/reply/hashcode/Application.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="36" lean-forward="false" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1487597808000" expanded="true" signature="3456:3458" ph="//..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/reply/hashcode/helpers/MatrixHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1230">
+          <caret line="82" column="0" lean-forward="false" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2456#2464#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/reply/hashcode/UnavailableSlot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="36" lean-forward="false" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/reply/hashcode/Pool.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="17" lean-forward="true" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/reply/hashcode/Server.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="22" lean-forward="true" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="25" lean-forward="false" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/reply/hashcode/helpers/FileHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/resources/input.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="5" lean-forward="false" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/reply/hashcode/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <marker date="1487597808000" expanded="true" signature="3456:3458" ph="//..." />
           </folding>
         </state>
       </provider>
@@ -1245,6 +1318,7 @@
           <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2456#2464#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1271,10 +1345,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="870">
           <caret line="82" column="23" lean-forward="false" selection-start-line="82" selection-start-column="23" selection-end-line="82" selection-end-column="23" />
-          <folding>
-            <element signature="e#2673#2674#0" expanded="false" />
-            <element signature="e#2741#2742#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1292,6 +1362,7 @@
           <caret line="10" column="45" lean-forward="false" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
+            <marker date="1487597808000" expanded="true" signature="3456:3458" ph="//..." />
           </folding>
         </state>
       </provider>
@@ -1314,53 +1385,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/reply/hashcode/Pool.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="26" lean-forward="false" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#385#386#0" expanded="true" />
-            <element signature="e#420#421#0" expanded="true" />
-            <element signature="e#442#443#0" expanded="true" />
-            <element signature="e#479#480#0" expanded="true" />
-            <element signature="e#507#508#0" expanded="true" />
-            <element signature="e#560#561#0" expanded="true" />
-            <element signature="e#600#601#0" expanded="true" />
-            <element signature="e#637#638#0" expanded="true" />
-            <element signature="e#665#666#0" expanded="true" />
-            <element signature="e#718#719#0" expanded="true" />
-            <element signature="e#758#759#0" expanded="true" />
-            <element signature="e#797#798#0" expanded="true" />
-            <element signature="e#821#822#0" expanded="true" />
-            <element signature="e#872#873#0" expanded="true" />
-            <element signature="e#904#905#0" expanded="true" />
-            <element signature="e#949#950#0" expanded="true" />
-            <element signature="e#979#980#0" expanded="true" />
-            <element signature="e#1042#1043#0" expanded="true" />
-            <element signature="e#1086#1087#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/src.zip!/java/nio/file/Paths.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="429">
           <caret line="82" column="23" lean-forward="false" selection-start-line="82" selection-start-column="23" selection-end-line="82" selection-end-column="23" />
-          <folding>
-            <element signature="e#2673#2674#0" expanded="false" />
-            <element signature="e#2741#2742#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/reply/hashcode/helpers/FileHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="3" lean-forward="false" selection-start-line="28" selection-start-column="3" selection-end-line="28" selection-end-column="3" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1368,16 +1396,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="15" column="36" lean-forward="false" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
-          <folding>
-            <element signature="e#338#339#0" expanded="true" />
-            <element signature="e#356#357#0" expanded="true" />
-            <element signature="e#389#390#0" expanded="true" />
-            <element signature="e#409#410#0" expanded="true" />
-            <element signature="e#436#437#0" expanded="true" />
-            <element signature="e#454#455#0" expanded="true" />
-            <element signature="e#487#488#0" expanded="true" />
-            <element signature="e#507#508#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1389,60 +1408,69 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/reply/hashcode/Application.java">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="69" lean-forward="false" selection-start-line="22" selection-start-column="69" selection-end-line="22" selection-end-column="69" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/reply/hashcode/Server.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-105">
+          <caret line="14" column="22" lean-forward="false" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/reply/hashcode/Pool.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="95" column="49" lean-forward="false" selection-start-line="95" selection-start-column="49" selection-end-line="95" selection-end-column="49" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/reply/hashcode/Server.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/reply/hashcode/Application.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="14" column="35" lean-forward="false" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="35" />
+        <state relative-caret-position="634">
+          <caret line="79" column="5" lean-forward="false" selection-start-line="79" selection-start-column="5" selection-end-line="79" selection-end-column="5" />
           <folding>
-            <element signature="e#458#459#0" expanded="true" />
-            <element signature="e#477#478#0" expanded="true" />
-            <element signature="e#512#513#0" expanded="true" />
-            <element signature="e#534#535#0" expanded="true" />
-            <element signature="e#564#565#0" expanded="true" />
-            <element signature="e#585#586#0" expanded="true" />
-            <element signature="e#624#625#0" expanded="true" />
-            <element signature="e#650#651#0" expanded="true" />
-            <element signature="e#684#685#0" expanded="true" />
-            <element signature="e#709#710#0" expanded="true" />
-            <element signature="e#756#757#0" expanded="true" />
-            <element signature="e#790#791#0" expanded="true" />
-            <element signature="e#822#823#0" expanded="true" />
-            <element signature="e#845#846#0" expanded="true" />
-            <element signature="e#888#889#0" expanded="true" />
-            <element signature="e#918#919#0" expanded="true" />
-            <element signature="e#959#960#0" expanded="true" />
-            <element signature="e#992#993#0" expanded="true" />
-            <element signature="e#1054#1055#0" expanded="true" />
-            <element signature="e#1104#1105#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <marker date="1487597808000" expanded="true" signature="3456:3458" ph="//..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/reply/hashcode/OutputRow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="634">
+          <caret line="63" column="59" lean-forward="false" selection-start-line="63" selection-start-column="59" selection-end-line="63" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/reply/hashcode/helpers/FileHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="574">
+          <caret line="50" column="13" lean-forward="true" selection-start-line="50" selection-start-column="13" selection-end-line="50" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/reply/hashcode/helpers/MatrixHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
+        <state relative-caret-position="394">
           <caret line="82" column="0" lean-forward="false" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2456#2464#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
