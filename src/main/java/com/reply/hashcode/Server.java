@@ -20,7 +20,7 @@ public class Server implements Comparable<Server> {
     this.id = id;
     this.size = size;
     this.capacity = capacity;
-    this.performanceIndex = capacity.doubleValue() / size.doubleValue();
+    this.performanceIndex = capacity.doubleValue() * size.doubleValue();
   }
 
 
